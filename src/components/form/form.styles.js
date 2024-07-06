@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 const StyledForm = styled.form`
-	width: 30%;
-	margin: 275px auto;
+	width: 343px;
+	margin: 48px auto;
+	padding: 0 16px;
 
 	font-family: 'Space Grotesk', sans-serif;
 	input {
@@ -34,23 +35,28 @@ const CardNumberContainer = styled.div`
 	flex-direction: column;
 	margin-bottom: 20px;
 `;
-const DateAndCvc = styled.div`
+const StyledDateAndCvc = styled.div`
 	display: flex;
 	width: 100%;
 	gap: 20px;
 	font-size: 12px;
 	margin-bottom: 20px;
 `;
-const DateContainer = styled.div`
+const StyledDateContainer = styled.div`
 	display: flex;
 	width: 100%;
 	gap: 20px;
 `;
+const StyledErrors = styled.span`
+	color: red;
+	font-weight: bold;
+`;
 
 export {
-	DateContainer,
-	DateAndCvc,
+	StyledDateContainer,
+	StyledDateAndCvc,
 	StyledForm,
 	CardHolderContainer,
-	CardNumberContainer
+	CardNumberContainer,
+	StyledErrors
 };

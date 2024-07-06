@@ -1,57 +1,77 @@
 import styled from 'styled-components';
 
-const CardsContainer = styled.div`
-	margin: 187px auto;
-	width: 541px;
+const StyledCardsContainer = styled.div`
+	margin: 120px auto 48px auto;
+	width: 343px;
 	position: relative;
+	text-align: center;
 `;
 
-const FrontCardContainer = styled.div`
-	width: 447px;
-	height: 245px;
-	background-image: url(bg-card-front.png);
+const StyledFrontCardContainer = styled.div`
+	width: 285px;
+	height: 156px;
+	background-image: url(./images/bg-card-front.png);
 	border-radius: 10px;
+	margin-left: 17px;
 	margin-bottom: 37px;
 	box-shadow: 0px 26px 62px 6px rgba(0, 0, 0, 0.24);
+`;
 
-	&::before {
-		content: '';
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-		background-color: white;
-		z-index: 2;
-		position: absolute;
-		left: 32px;
-		top: 28px;
-	}
-	&::after {
-		content: '';
-		width: 20px;
-		height: 20px;
-		border-radius: 50%;
-		border: 1px solid white;
-		z-index: 2;
-		position: absolute;
-		left: 94px;
-		top: 40px;
-	}
+const StyledCardLogo = styled.img`
+	width: 54px;
+	padding-top: 17px;
+	margin-left: 19px;
 `;
-const CardNumber = styled.p`
-	font-size: 28px;
-	color: aliceblue;
+const StyledCardNumber = styled.p`
+	font-size: 18px;
+	color: white;
 	text-align: center;
-	margin-top: 139px;
-	margin-top: 0;
-	padding-top: 139px;
+	margin-top: 37px;
+	letter-spacing: 2.2px;
 `;
-const RearCardContainer = styled.div`
-	width: 447px;
-	height: 245px;
-	background-image: url(bg-card-back.png);
+const StyledCardName = styled.span`
+	font-size: 9px;
+	color: white;
+	margin-top: 17px;
+	margin-left: 5px;
+	letter-spacing: 1.29px;
+`;
+
+const StyledCardDate = styled.span`
+	font-size: 9px;
+	color: white;
+	letter-spacing: 1.29px;
+	padding-left: 124.11px;
+`;
+const StyledBackCardContainer = styled.div`
+	width: 285px;
+	height: 156px;
+	background-image: url(./images/bg-card-back.png);
+	background-size: contain;
 	border-radius: 10px;
 	position: absolute;
-	right: 0;
+	top: -94px;
+	left: 73px;
+	z-index: -1;
+	margin-right: 16px;
 	box-shadow: 0px 26px 62px 6px rgba(0, 0, 0, 0.24);
 `;
-export { CardsContainer, FrontCardContainer, RearCardContainer, CardNumber };
+
+const StyledCardCvc = styled.span`
+	font-size: 9px;
+	color: white;
+	letter-spacing: 1.29px;
+	position: absolute;
+	top: 70px;
+	right: 37px;
+`;
+export {
+	StyledCardsContainer,
+	StyledFrontCardContainer,
+	StyledCardLogo,
+	StyledBackCardContainer,
+	StyledCardNumber,
+	StyledCardName,
+	StyledCardDate,
+	StyledCardCvc
+};
