@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StyledForm = styled.form`
 	width: 343px;
-	margin: 48px auto;
+	margin: 68px auto;
 	padding: 0 16px;
 
 	font-family: 'Space Grotesk', sans-serif;

@@ -1,6 +1,6 @@
 
 import { useState } from "react"
-import { CardHolderContainer, CardNumberContainer, DateAndCvc, DateContainer, StyledDateAndCvc, StyledDateContainer, StyledErrors, StyledForm } from "./form.styles";
+import { CardHolderContainer, CardNumberContainer,  StyledDateAndCvc, StyledDateContainer, StyledErrors, StyledForm } from "./form.styles";
 import { useForm } from "react-hook-form";
 import { FORM_VALIDATION } from "../../constants/validation-data";
 

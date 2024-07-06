@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 
 const StyledCardsContainer = styled.div`
-	margin: 120px auto 48px auto;
-	width: 343px;
+	width: 100%;
 	position: relative;
 	text-align: center;
+	height: 240px;
+	background-image: url('/images/bg-main-desktop.png');
+	background-size: cover;
+	padding-top: 32px;
 `;
 
 const StyledFrontCardContainer = styled.div`
@@ -15,6 +18,9 @@ const StyledFrontCardContainer = styled.div`
 	margin-left: 17px;
 	margin-bottom: 37px;
 	box-shadow: 0px 26px 62px 6px rgba(0, 0, 0, 0.24);
+	position: absolute;
+	top: 126px;
+	z-index: 2;
 `;
 
 const StyledCardLogo = styled.img`
@@ -49,11 +55,9 @@ const StyledBackCardContainer = styled.div`
 	background-image: url(./images/bg-card-back.png);
 	background-size: contain;
 	border-radius: 10px;
-	position: absolute;
-	top: -94px;
-	left: 73px;
-	z-index: -1;
-	margin-right: 16px;
+	position: relative;
+	z-index: 1;
+	margin-left: 73px;
 	box-shadow: 0px 26px 62px 6px rgba(0, 0, 0, 0.24);
 `;
 
@@ -63,7 +67,8 @@ const StyledCardCvc = styled.span`
 	letter-spacing: 1.29px;
 	position: absolute;
 	top: 70px;
-	right: 37px;
+	right: 40px;
+	z-index: 2;
 `;
 export {
 	StyledCardsContainer,
