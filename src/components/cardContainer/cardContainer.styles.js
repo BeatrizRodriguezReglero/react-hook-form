@@ -8,6 +8,8 @@ const StyledCardsContainer = styled.div`
 	background-image: url('/images/bg-main-desktop.png');
 	background-size: cover;
 	padding-top: 32px;
+	@media (min-width: 768px) {
+	}
 `;
 
 const StyledFrontCardContainer = styled.div`

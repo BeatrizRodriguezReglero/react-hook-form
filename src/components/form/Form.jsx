@@ -1,5 +1,4 @@
 
-import { useState } from "react"
 import { CardHolderContainer, CardNumberContainer,  StyledDateAndCvc, StyledDateContainer, StyledErrors, StyledForm } from "./form.styles";
 import { useForm } from "react-hook-form";
 import { FORM_VALIDATION } from "../../constants/validation-data";
@@ -11,7 +10,7 @@ const Form=({cardData,setCardData})=>{
 		handleSubmit,
 		register,
 		formState: { errors }
-	} = useForm({ mode: 'onChange' });
+	} = useForm();
     return(
         <>
             <StyledForm onSubmit={handleSubmit(onSubmit)}>
